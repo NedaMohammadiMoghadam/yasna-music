@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#8c72d9">
+<title>برای یسنای عزیزم 💜</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap');
+:root{--ink:#493b70;--pink:#f8b8d8;--lav:#b9a5f5;--blue:#a9d8f7}
+*{box-sizing:border-box} body{margin:0;min-height:100vh;font-family:Vazirmatn,Tahoma,sans-serif;color:var(--ink);display:grid;place-items:center;overflow-x:hidden;background:linear-gradient(135deg,#ffe4f1 0%,#e9e0ff 48%,#d9f1ff 100%);padding:24px}
+body:before,body:after{content:"";position:fixed;width:320px;height:320px;border-radius:50%;filter:blur(55px);opacity:.55;z-index:-1;animation:drift 12s ease-in-out infinite alternate}body:before{background:#f6a9d0;top:-100px;right:-80px}body:after{background:#9ccdf6;bottom:-110px;left:-80px;animation-delay:-5s}
+@keyframes drift{to{transform:translate(45px,35px) scale(1.15)}}
+.card{width:min(100%,440px);position:relative;text-align:center;padding:34px 25px 27px;border:1px solid #ffffffb8;border-radius:32px;background:#ffffffa8;box-shadow:0 22px 70px #7863a52b;backdrop-filter:blur(16px);overflow:hidden}
+.sparkle{position:absolute;color:#fff;font-size:20px;animation:twinkle 2.5s infinite alternate}.s1{top:25px;right:28px}.s2{top:75px;left:25px;animation-delay:.7s}.s3{bottom:100px;right:22px;animation-delay:1.2s}@keyframes twinkle{to{opacity:.35;transform:scale(.7) rotate(25deg)}}
+.orbit{width:128px;height:128px;margin:0 auto 18px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(145deg,#f7c6e1,#c6b5ff,#aee0f5);box-shadow:0 10px 30px #a58bd45c;position:relative}.orbit:before{content:"";position:absolute;inset:8px;border:1px solid #ffffffb8;border-radius:50%}.heart{font-size:55px;filter:drop-shadow(0 5px 5px #9d6b9b40)}
+.kicker{font-size:12px;letter-spacing:2px;color:#917bb9;font-weight:700;margin:0 0 8px}.title{font-size:34px;line-height:1.4;margin:0;color:#7659ad;font-weight:800}.subtitle{font-size:14px;color:#8e7da9;margin:4px 0 20px}
+.message{font-size:15px;line-height:2.15;color:#62547f;background:#fff9;border:1px solid #fff;border-radius:20px;padding:15px 17px;margin:0 0 23px}.message strong{color:#9a65ad}
+.visualizer{height:58px;display:flex;align-items:center;justify-content:center;gap:5px;margin:0 auto 20px}.bar{width:5px;height:12px;border-radius:9px;background:linear-gradient(#bd8ce7,#f2a8cb);opacity:.7}.playing .bar{animation:wave .75s ease-in-out infinite alternate}.bar:nth-child(3n){animation-delay:.15s}.bar:nth-child(4n){animation-delay:.3s}.bar:nth-child(5n){animation-delay:.45s}@keyframes wave{to{height:48px;opacity:1}}
+button{border:0;font:inherit;cursor:pointer}.play{width:100%;border-radius:18px;padding:15px 20px;color:#fff;font-weight:700;font-size:16px;background:linear-gradient(100deg,#9b78d7,#d78fc5);box-shadow:0 9px 22px #a77dc44d;transition:transform .2s}.play:active{transform:scale(.98)}.play:disabled{opacity:.65;cursor:wait}
+.track{font-size:12px;color:#927fae;margin:14px 0 7px}.seek{width:100%;accent-color:#a27bd4;cursor:pointer}.times{display:flex;justify-content:space-between;direction:ltr;font-size:11px;color:#998bad;margin-top:2px}.footer{font-size:11px;color:#a091b7;margin-top:22px}.note{font-size:11px;color:#9a8bad;margin-top:10px}
+</style>
+</head>
+<body>
+<main class="card" id="card">
+  <span class="sparkle s1">✦</span><span class="sparkle s2">✧</span><span class="sparkle s3">✦</span>
+  <div class="orbit"><div class="heart">💜</div></div>
+  <p class="kicker">یک هدیه‌ی پر از عشق</p>
+  <h1 class="title">یسنای عزیزمان</h1>
+  <p class="subtitle">از طرف مامان و بابا 💗</p>
+  <p class="message"><strong>به خودت ایمان داشته باش؛ دختر بودن هرگز مرز رؤیاهایت نیست.</strong></p>
+  <div class="visualizer" id="visualizer" aria-label="موج موسیقی">
+    <i class="bar"></i><i class="bar"></i><i class="bar"></i><i class="bar"></i><i class="bar"></i><i class="bar"></i><i class="bar"></i><i class="bar"></i><i class="bar"></i><i class="bar"></i><i class="bar"></i><i class="bar"></i><i class="bar"></i><i class="bar"></i><i class="bar"></i><i class="bar"></i><i class="bar"></i><i class="bar"></i><i class="bar"></i><i class="bar"></i><i class="bar"></i>
+  </div>
+  <audio id="audio" controls preload="none" playsinline style="display:block;width:100%;height:48px;margin:0 auto 12px;border-radius:14px"><source src="https://cdn.imgurl.ir/uploads/k243078_.mp3" type="audio/mpeg">مرورگر شما پخش‌کننده صوتی را پشتیبانی نمی‌کند.</audio>
+  <button class="play" id="play" type="button">▶　 پخش آهنگ یسنا</button>
+  <p style="font-size:12px;margin:10px 0 0"><a href="https://cdn.imgurl.ir/uploads/k243078_.mp3" target="_blank" rel="noopener" style="color:#7659ad">اگر پخش‌کننده کار نکرد، آهنگ را مستقیم باز کن</a></p>
+  <p class="track">🎵 آهنگ مخصوص یسنا · با عشق مامان و بابا</p>
+  <input class="seek" id="seek" type="range" min="0" max="100" value="0" aria-label="موقعیت آهنگ">
+  <div class="times"><span id="current">0:00</span><span id="duration">0:00</span></div>
+  
+  <p class="note" id="note">برای شنیدن آهنگت، دکمه‌ی پخش را لمس کن یسنای عزیز 💜</p>
+</main>
+<script>
+(function(){
+  const audio = document.getElementById('audio');
+  const play = document.getElementById('play');
+  const card = document.getElementById('card');
+  const seek = document.getElementById('seek');
+  const current = document.getElementById('current');
+  const duration = document.getElementById('duration');
+  const note = document.getElementById('note');
+  const fmt = s => !Number.isFinite(s) ? '0:00' : Math.floor(s/60)+':'+String(Math.floor(s%60)).padStart(2,'0');
+
+  async function toggleMusic(){
+    if (audio.paused) {
+      note.textContent = 'در حال آماده‌سازی آهنگ...';
+      try {
+        const result = audio.play();
+        if (result && typeof result.then === 'function') await result;
+      } catch (err) {
+        note.textContent = 'پخش انجام نشد. از پخش‌کننده صوتی بالای دکمه استفاده کن یا آهنگ را مستقیم باز کن.';
+      }
+    } else {
+      audio.pause();
+    }
+  }
+  play.addEventListener('click', toggleMusic);
+  audio.addEventListener('play', () => { play.textContent='Ⅱ　 توقف آهنگ'; card.classList.add('playing'); note.textContent='این آهنگ تقدیم به تو، یسنای عزیزم 💜'; });
+  audio.addEventListener('pause', () => { play.textContent='▶　 ادامه‌ی آهنگ'; card.classList.remove('playing'); });
+  audio.addEventListener('loadedmetadata', () => { duration.textContent=fmt(audio.duration); });
+  audio.addEventListener('timeupdate', () => { current.textContent=fmt(audio.currentTime); if(Number.isFinite(audio.duration)&&audio.duration>0) seek.value=(audio.currentTime/audio.duration)*100; });
+  seek.addEventListener('input', () => { if(Number.isFinite(audio.duration)) audio.currentTime=(seek.value/100)*audio.duration; });
+  audio.addEventListener('ended', () => { play.textContent='▶　 پخش دوباره'; card.classList.remove('playing'); });
+  audio.addEventListener('error', () => { note.textContent='فایل از میزبان موسیقی بارگذاری نشد؛ لینک مستقیم آهنگ را امتحان کن.'; });
+})();
+</script>
+</body>
+</html>
